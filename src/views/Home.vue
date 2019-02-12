@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class = "home">
+    <VideoPlay :src = "src" :type = "type" />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+<script>/* eslint-disable */
+  import VideoPlay from '@/components/VideoPlay.vue';
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld,
-  },
-};
+  export default {
+    name: 'home',
+    components: {
+      // HelloWorld,
+      // VideoPlay,
+      VideoPlay
+    },
+    data() {
+      return {
+        src: 'rtmp://192.168.1.24:1935/live/leo',
+        type: 'rtmp/flv'
+      };
+    }
+  };
 </script>
