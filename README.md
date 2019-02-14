@@ -1,4 +1,4 @@
-#vue 组件库
+# vue 组件库
 
 [![Travis CI  Status](https://travis-ci.org/piaohan/vue-components.svg?branch=master)](https://travis-ci.org/piaohan/vue-components)
 
